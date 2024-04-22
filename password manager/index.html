@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tab title-->
+    <title>Password Manager</title>
+    <!--Link to CSS file (Stylesheet)-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Link to JS file-->
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <!--Start first article section / first card -->
+    <!--Heading(h2), Form - input text/password, button(submit) -->
+    <article class="passwordManager">
+        <header class="pm-header">
+            <h2 class="pm-heading">Safetylock</h2>
+        </header>
+        <form class="passwordManager-Form" id="passwordManager-Form">
+            <label for="">URL / Naam</label>
+            <input type="text" class="nameInput" id="nameInput" placeholder="Enter URL or Name" required>
+            <label for="">Wachtwoord</label>
+            <input type="password" class="passwordInput" id="passwordInput" placeholder="Enter password" required>
+            <button type="submit" class="buttonSubmit" id="buttonSubmit">Toevoegen</button>
+        </form>
+    </article>
+    <!--End first article section / first card -->
+
+    <!--Start second article section / second card -->
+    <!--password list(name and password value), two buttons / buttton -->
+    <article class="passwordList">
+        <section class="passwordList-body">
+            <ul class="passwordList-items" id="passwordList-items"></ul>
+        </section>
+        <button class="showAllPasswords" id="showAllPasswords">Show All</button>
+    </article>
+    <!--End second article section / second card -->
+
+
+    <button class="fab" id="fab"><></button>
+
+
+
+</body>
+
+</html>

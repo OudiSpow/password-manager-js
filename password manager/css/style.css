@@ -1,0 +1,178 @@
+/* Resetting default margin, padding, and box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up styles for the body */
+body{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    min-height: 100vh; /* Minimum height of viewport */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+/* Start styling fisrt article/ first card / .passwordManager*/
+.passwordManager{
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.pm-header{
+    height: 20%;
+}
+
+.pm-heading{
+    font-weight: 100;
+}
+
+.passwordManager-Form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nameInput{
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.passwordInput{
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttonSubmit{
+    width: 120px;
+    height: 40px;
+    background: hsl(176, 63%, 55%);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.buttonSubmit:hover{
+    cursor: pointer;
+    background: hsl(176, 63%, 40%);
+}
+/* End styling fisrt article/ .passwordManager*/
+
+/* Start styling second article/ second card .passwordList*/
+.passwordList{
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+    gap: 20px;
+}
+
+.passwordList-body{
+    height: 100%;
+    overflow-y: scroll; /* Adding vertical scroll if needed */
+}
+
+.passwordList-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.passwordList-item{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    gap: 10px;
+}
+
+.showPassword{
+    width: 80px;
+    height: 30px;
+    background: hsl(176, 63%, 55%);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.showPassword:hover{
+    cursor: pointer;
+    background: hsl(176, 63%, 40%);
+}
+
+.deletePassword{
+    width: 80px;
+    height: 30px;
+    background: red;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.deletePassword:hover{
+    cursor: pointer;
+    background: hsl(0, 100%, 40%);
+}
+
+
+.showAllPasswords{
+    width: 120px;
+    height: 40px;
+    background: hsl(176, 63%, 55%);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.showAllPasswords:hover{
+    cursor: pointer;
+    background: hsl(176, 63%, 40%);
+}
+/* End styling second article/ second card .passwordList*/
+
+
+.fab {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    background: red;
+    border-radius: 12px;
+    font-size: 32px;
+    border: 5px solid black;
+}
+
+.fab:hover {
+    cursor: pointer;
+    background: hsl(0, 100%, 40%);
+}
+
+
+/* Media query voor responsiveness */
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    article {
+        width: 100%; 
+        max-width: none; 
+    }
+}
+
